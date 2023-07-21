@@ -29,5 +29,11 @@ namespace appfordeploy.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("{name}")]
+        public string Get(string name)
+        { 
+            return name.ToUpper();
+        }
     }
 }
